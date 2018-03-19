@@ -34,7 +34,7 @@ html{
 
 .uppercase{
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.25em;
     justify-content: center;
 }
