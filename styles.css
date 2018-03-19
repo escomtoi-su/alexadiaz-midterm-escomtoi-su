@@ -1,0 +1,119 @@
+html{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+.heading1{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 3.5em;
+    line-height: 1;
+}
+
+.heading2{
+    font-family: 'Playfair Display';
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.heading3{
+    font-family: 'Playfair Display';
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 2;
+}
+
+.uppercase{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    justify-content: center;
+}
+
+.footerlink{
+    transition: color 1s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footerlink:hover{
+    text-decoration: none;
+    color: #5bc0de;
+}
+
+.twotransform{
+    transition: font-size 1s ease;
+}
+
+.twotransform:hover{
+    font-size: 1em;
+}
+
+.threetransform{
+    transition: font-style .5s ease;
+}
+
+.threetransform:hover{
+    font-style: italic;
+}
+
+.navborder{
+    transition: border .5s ease;
+}
+
+.navborder:hover{
+    border: solid .5px #fff;
+}
+
+.line {
+    border-left: 1px solid #000;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 250px;
+}
+
+@keyframes bounceLine {
+    0% {transform: translateY(0%);}
+    50% {transform: translateY(25%);}
+    100% {transform: translateY(0%);}
+}
+
+.lineanimation .bounce {animation: bounceLine 2s linear 0s infinite;}
+
+@media screen and (max-width:768px) {
+    .heading1{
+        font-size: 3em;
+    }
+
+    .heading2{
+        font-size: 1.5em;
+    }
+
+    .heading3{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:575px){
+    .tabletgrid{
+        flex-basis: 100% !important;
+        max-width: initial !important;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .mobilegrid{
+        flex-basis: 100% !important;
+        max-width: initial !important;
+    }
+}
